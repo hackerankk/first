@@ -1,0 +1,57 @@
+.icon{
+    display: flex;
+    justify-content: flex-end;
+    column-gap: 10px;
+    font-size: 2rem;
+    padding-right: 35px;
+    /* color: red; */
+}
+.icon a{
+    text-decoration: none;
+    margin-bottom: 17px;
+    color:blue;
+}
+.upper{
+    background-color: black;
+}
+.nav{
+    display: flex;
+    justify-content: space-around;
+    
+   
+
+}
+.tab{
+    display: flex;
+    column-gap: 26px;
+
+  
+}
+.tab a{
+    text-decoration: none;
+    color:white;
+}
+.logo a{
+    display: flex;
+    height: 40px;
+    width: 8px;
+}
+.foter{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.third{
+    display: flex;
+    justify-content: center;
+    font-size: .85rem;
+    margin:0;
+}
+     
+.third p{
+    margin: 0;
+}
+.first a{
+    text-decoration: none;
+    
+}

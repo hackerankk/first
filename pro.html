@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+              *{
+                    padding: 0;
+                    margin: 0;
+                    box-shadow: 0;
+                    color:white;
+                    text-transform: capitalize;
+            }
+            a{
+                text-decoration: none;
+            }
+
+        .navi{
+            display: flex;
+            justify-content: space-between;
+            padding: 8px 26px;
+        }
+        .nav1 {
+                display: flex;
+                gap:10px;
+                font-size: 18px;
+                padding: 4px 14px 3px 0;
+            }
+            .tour{
+                padding-top: 5px;
+            }
+        .nav2{
+            display:flex;
+            justify-content: center;
+      align-items: center;
+      width: 80%;
+      margin-inline: auto;
+      gap: 20px;
+      background: white;
+        }
+        body{
+            background-image: url(image/might.webp);
+            height: 1000px;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size:cover;
+        }
+        .heading{
+            font-size: 1.9rem;
+            display: flex;
+            justify-content: center;
+            margin: 134px;
+            /* font-weight: 900; */
+
+
+
+        }
+        .first{
+            display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color:black;
+}
+.first label{
+    color: black;
+}
+        button{
+            background: red;
+    padding: .75rem 1.5rem;
+    border-radius: 19px;
+    border: none;
+        }
+        input{
+            outline: none;
+            border: none;
+            color:black;
+        }
+        .submit_form{
+            padding: 10px;
+   
+    background: #0000006b;
+        }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="navi">
+          <div class="tour">
+            <b>Tour travel</b>
+          </div>
+          <div class="nav1">
+            <a href="home">home</a>
+            <a href="about">about us </a>
+            <a href="packages">packages</a>
+            <a href="Trending">trending</a>
+            <a href="conatact">Contact us</a>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <div class="heading">
+      <h1>Exploring world with us !</h1>
+    </div>
+
+    <div class="submit_form"> 
+      <form>
+        <div class="nav2">
+          <div class="first">
+            <label> Where You Want To Go?</label>
+            <input type="text" placeholder="country" />
+          </div>
+          <div class="first">
+            <label>Check In</label>
+            <input type="datetime" placeholder=" check in" />
+          </div>
+          <div class="first">
+            <label>Check Out</label>
+            <input type="datetime" placeholder="Check Out" />
+          </div>
+          <div class="first">
+            <label>How Many Are you?</label>
+            <input type="number" placeholder="mention guest" />
+          </div>
+          <div class="submit">
+            <button type="submit">Check availabiity</button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
