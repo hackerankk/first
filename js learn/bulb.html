@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            height: 500px;
+            width: 400px;
+            border-radius: 50%;
+            background-color: yellowgreen;
+
+        }
+    </style>
+</head>
+<body>
+    <div class=""></div>
+    <button onclick="bulp()">on</button>
+    <script>
+       let btn= document.querySelector("div");
+       let btn2= document.querySelector("button");
+       
+       let on=0;
+       function bulp(){
+        if(on==0){
+            btn.style.backgroundColor="white";
+            btn.innerText="this bulb is on";
+            btn.style.padding="138px";
+            btn.style.border="2px solid green";
+            btn2.style.backgroundColor="orange";
+            btn2.innerText="on";
+            on=1;
+        }
+        else{
+            btn.style.backgroundColor="yellow";
+            btn.innerText="this bulb is of";
+            btn.style.fontSize="10rem"
+            btn.style.padding="138px"
+            btn.style.color="black";
+            btn2.style.backgroundColor="grey";
+            btn2.style.width="25px"
+            btn2.style.height="25px"
+            btn.style.border="2px solid black";
+            btn2.innerText="of";
+            on=0;
+        }
+       }
+    
+    </script>
+</body>
+</html>

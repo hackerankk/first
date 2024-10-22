@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+    }
+    ul {
+      list-style: none;
+    }
+    .container {
+      display: flex;
+      justify-content: space-between;
+      margin: 0 2rem;
+      background-color: #7631f5;
+    }
+    a {
+      color: white;
+    }
+
+    .menu {
+      display: flex;
+      gap: 12px;
+    }
+    .us {
+      position: relative;
+    }
+    .about {
+      position: absolute;
+      background-color: #7631f5;
+      line-height: 35px;
+      display: none;
+      transform: translate(-15px, 0px);
+      transition: 10s ease-in;
+    }
+  </style>
+  <body>
+    <div class="container">
+      <div class="icon">icon</div>
+      <div class="menu">
+        <span><a href="hello">home</a></span>
+        <span> <a href="##">Help</a></span>
+        <div class="us" onclick="menu()">
+          <span>about us</span>
+          <div class="about">
+            <ul>
+              <span> <li>features</li></span>
+              <span> <li>establishment</li></span>
+              <span> <li>year</li></span>
+              <span> <li>our guest</li></span>
+            </ul>
+          </div>
+        </div>
+        <span> <a href="##">contact us</a></span>
+        <span> <a href="##">login</a></span>
+      </div>
+    </div>
+    <script>
+      let drop = document.querySelector(".us");
+      console.log("hey");
+      let drop2 = document.querySelector(".about");
+      let drop3 = 0;
+      function menu() {
+        if (drop3 == 0) {
+          console.log("hey");
+          drop2.style.display = "block";
+          drop3 = 1;
+        } else {
+          drop2.style.display = "none";
+          drop3 = 0;
+        }
+      }
+    </script>
+  </body>
+</html>

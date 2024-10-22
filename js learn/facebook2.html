@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         *{
+            padding: 0%;
+            margin: 0;
+            box-sizing: border-box;
+         }
+         .card{
+            margin: auto;
+            width: 14rem;
+            border: 2px solid;
+            justify-content: center;
+         }
+         .buton{
+            display: flex;
+            justify-content: space-around;
+         }
+    </style>
+</head>
+<body>
+<div class="card">
+    <div class="image"><img src="photo/amgel.jpeg" alt="angel"></div>
+    <div class="cont">
+        <h5>angel </h5>
+        <p>this is your friend</p>
+    </div>
+<div class="buton" onclick="accept()" >
+    <button>add fiend</button>
+    
+</div>
+</div>
+
+<script>
+    let p=document.querySelector("p");
+    let btn=document.querySelector("button");;
+    let accept1=0;
+    function accept(){
+        if(accept1==0){
+            p.innerText="add friend";
+            btn.style.backgroundColor="orange"
+            btn.innerText="add"
+            accept1=1;
+
+        }
+        else{
+           p.innerText="remove friend";
+             btn.style.backgroundColor="pink"
+             btn.innerText="remove"
+           accept1="0"
+        }
+    }
+</script>
+</body>
+</html>

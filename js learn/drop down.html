@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        padding: 0%;
+        margin: 0%;
+        box-sizing: border-box;
+      }
+      .container {
+        display: flex;
+        justify-content: space-between;
+        background: dodgerblue;
+        color: white;
+      }
+      .first {
+        display: flex;
+      }
+      li {
+        list-style: none;
+        padding: 20px;
+      }
+      .drop {
+        position: relative;
+        /* opacity: 0.8; */
+        /* transition: 15s ease; */
+      }
+      .list {
+        position: absolute;
+        background-color: dodgerblue;
+        opacity: 0.8;
+        transform: translate(-10px, 19px);
+        transition: 1s;
+        display: none;
+      }
+      .drop:hover .list {
+        opacity: 1;
+        display: block;
+      }
+      /* .list:hover {
+        transition: all;
+        /* transition-duration: 15s; */
+        /* opacity: 1; */
+       
+      .all:hover {
+        background-color: brown;
+        color: white;
+      }
+      .logo {
+        padding: 10px;
+        font-size: 30px;
+        font-family: cursive;
+      }
+      .home{
+        transition: all  4s 4s;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="logo">log</div>
+      <div class="menu">
+        <ul class="first">
+          <li>home</li>
+          <li>about</li>
+          <li class="drop">
+            course
+            <div class="list">
+              <ul class="home">
+                <li class="all">math</li>
+                <li class="all">sciece</li>
+                <li class="all">js</li>
+              </ul>
+            </div>
+          </li>
+          <li>login</li>
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>

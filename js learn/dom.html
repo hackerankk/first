@@ -4,15 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-</head>
+    <style>
+        div{
+            width: 300px;
+            height: 200px;
+            background-color: aqua;
+            border-radius: 50%;
+        }
+
+    </style></head>
 <body>
-    <div class="dom" id="fn">
-    <h5>hey</h5>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias voluptatibus distinctio perspiciatis, laudantium minus, non fuga corrupti numquam optio velit, repellendus eligendi sunt eos incidunt vitae beatae illo rerum. Possimus fuga nisi sapiente nam modi voluptates dicta, eius quia voluptatibus. Veniam sint repudiandae quis a suscipit pariatur. Minus, reiciendis. Quae.</p>
-    </div>
+   <div class=""></div>
+   <button onclick="change()">on/of</button>
+    
+    
     <script>
         // dom 
-        
+        let btn=document.querySelector("div");
+        let btn2=document.querySelector("button");
+        let b=0
+        function change(){
+            if(b==0){
+                btn.style.backgroundColor="red";
+                b=1;
+            }
+            else{
+                btn.style.backgroundColor="blue";
+                b=0;
+            }
+        }
     </script>
 </body>
 </html>

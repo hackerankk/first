@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         *{
+            padding: 0%;
+            margin: 0;
+            box-sizing: border-box;
+         }
+         .card{
+            margin: auto;
+            width: 14rem;
+            border: 2px solid;
+            justify-content: center;
+         }
+         .buton{
+            display: flex;
+            justify-content: space-around;
+         }
+    </style>
+</head>
+<body>
+<div class="card">
+    <div class="image"><img src="photo/amgel.jpeg" alt="angel"></div>
+    <div class="cont">
+        <h5>angel </h5>
+        <p>this is your friend</p>
+    </div>
+<div class="buton">
+    <button onclick="accept()">confirm</button>
+    <button onclick="decline()" >cancel</button>
+</div>
+</div>
+
+<script>
+    let p=document.querySelector("p");
+    let btn=document.querySelector("button");;
+    // let accept1=0;
+    // function accept(){
+    //     if(accept1==0){
+    //         p.innerText="now your are friend";
+    //         accept1=1;
+
+    //     }
+    //     else{
+    //        p.innerText="you are not friend";
+    //        accept1="0"
+    //     }
+    // }
+    function accept(){
+        p.innerText="your are friend";
+    }
+    function decline(){
+        p.innerText="your are not friend";
+    }
+</script>
+</body>
+</html>

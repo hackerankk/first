@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .parent{
+            background-color: aqua;
+            width: 100vw;
+            height: 100vh;
+        }
+        .child{
+background-color: black;
+width: 250px;
+height: 250px;
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="child"></div>
+    </div>
+    
+    <script>
+        let par=document.querySelector(".parent")
+        let chi=document.querySelector(".child")
+        par.addEventListener("mouseleave",function (e){
+            chi.style.backgroundColor="blue";
+        })
+        par.addEventListener("mouseover",function (e){
+            par.style.backgroundColor="green";
+            // console.log(e.y);
+        })
+        par.addEventListener("mousemove",function (e){
+            chi.style.backgroundColor="grey";
+            console.log(e.y);
+            // console.log(e.x);
+        })
+        
+    </script>
+
+</body>
+</html>

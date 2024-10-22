@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+    <style>
+         *{
+            padding: 0%;
+            margin: 0;
+            box-sizing: border-box;
+         }
+         .card{
+            margin: auto;
+            width: 14rem;
+            border: 2px solid;
+            justify-content: center;
+         }
+         .buton{
+            display: flex;
+            justify-content: space-around;
+         }
+         button{
+            color:rgb(255, 157, 157) ;
+            
+         }
+         .image{
+            position: relative;
+         }
+         .heart{
+            position: absolute;
+            top:50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            font-size: 7rem;
+            opacity: .4;
+            color: white;
+         }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div class="image"><img src="photo/amgel.jpeg" alt="angel">
+            <div class="heart">
+                <i class="ri-heart-fill"></i>
+            </div>
+        </div>
+        
+        <div class="cont">
+            <button><i class="ri-heart-fill"></i></button>
+        </div>
+   
+    </div>
+    <script>
+        let click=document.querySelector("img");
+        let hrt=document.querySelector("heart");
+        let rem=0;
+        click.addEventListener("click",function gyab(){
+            if(gayab==0){
+                hrt.style.transform="translate (-50%,-%50%)"
+            }
+        })
+    </script>
+<body>
+</body>
+</html>
