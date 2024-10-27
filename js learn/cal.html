@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="">
+      <label for="">Name</label> <input type="text" name="" id="Name" />
+    </div>
+    <div class="">
+      <label for="">x</label> <input type="text" name="" id="x" />
+    </div>
+    <div class="">
+      <label for="">y</label> <input type="text" name="" id="y" />
+    </div>
+    <p id="p1"></p>
+    <button id="btn">Click Me</button>
+<p id="p2"></p>
+    <script>
+      let name = document.querySelector("#Name");
+      let x = document.querySelector("#x");
+      let y = document.querySelector("#y");
+      let btn = document.querySelector("#btn");
+      let P1=document.querySelector("#P1")
+      let display=document.querySelector("#display")
+      btn.addEventListener("click", function () {
+        let sum = parseInt(x.value) + parseInt(y.value);
+        let per = (sum / 200) * 100;
+        checkPer(per);
+        console.log(sum)
+        printData(name,x,y,sum)
+        console.log(name)
+        display=``;
+      });
+      function checkPer(per) {
+        if (per < 40) {
+          display=("fail");
+        } else {
+          display=("Pass");
+        }
+      }
+
+      function printData(name,x,y,sum){
+       p2.innerHTML= `<table>
+        <tr>
+            <th>Name</th>
+            <th>X</th>
+            <th>Y</th> 
+            <th>Result</th>
+            <th>status</th>
+        </tr>
+        <tr>
+            <th>${name.value}</th>
+            <th>${x.value}</th>
+            <th>${y.value}</th> 
+             <th>${sum}</th>
+             <th>${display}</th>
+        </tr>
+        </table>`
+      };
+    </script>
+  </body>
+</html>

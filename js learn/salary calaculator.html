@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="head">
+            <h1> gross salary</h1>
+        </div>
+        <div class="calc">
+            <form action="">
+                <label for="">name</label>
+                <input type="text" name="" id="name"><br>
+                <label for="">salary</label>
+                <input type="number" id="salary"><br>
+                <label for="">DA</label>
+                <input type="number" id="da"><br>
+                <label for="">HRA</label>
+                <input type="number" id="hra"><br>
+                <button id="btn">submit</button>
+            </form>
+        </div>
+    </div>
+    <div id="p2"></div>
+    <script>
+        let name=document.querySelector("#name")
+        let salary=document.querySelector("#salary")
+        let da=document.querySelector("#da")
+        let hra=document.querySelector("#hra")
+        let btn=document.querySelector("#btn")
+        let p2=document.querySelector("#p2")
+        
+        btn.addEventListener("click",function(event){
+            event.preventDefault();
+            let sum = parseInt(salary.value) + parseInt(da.value) + parseInt(hra.value);
+    console.log(sum);
+    printData(sum);
+        
+            function printData(sum){
+                p2.innerHTML=`<p> slary${sum}</p>`;
+            }
+         
+        });
+        
+
+    </script>
+</body>
+</html>
