@@ -23,7 +23,7 @@
     border-inline: none;
     outline: none;
     height: 4rem;
-    width: 13rem;
+    width: 12rem;
     text-align: right;
     font-size: 41px;
       }
@@ -66,51 +66,25 @@
         <i class="ri-settings-2-line"></i>
       </div>
       <div class="screen">
-    <span><input type="text"></span>
+    <span><input type="text" id="output"></span>
       </div>
       <div class="footer">
         <i class="ri-time-line"></i>
         <div class="border"></div>
-        <div class="cont">
-          <div class="numquam color">
-            <button>AC</button>
-          </div>
-          <div class="numquam color">
-           <button><i class="ri-delete-back-2-line"></i></button>
-          </div>
-          <div class="numquam color">
-            <button>+/-</button>
-          </div>
-          <div class="numquam color">
-            <button><i class="ri-divide-line"></i></button>
-          </div>
-          <div class="numquam color">
-            <button>7</button>
-          </div>
-          <div class="numquam color">
-            <button>8</button>
-          </div>
-          <div class="numquam color">
-            <button>9</button>
-          </div>
-          <div class="numquam color">
-            <button>x</button>
-          </div>
-          <div class="numquam color">
-            <button>4</button>
-          </div>
-          <div class="numquam color">
-            <button>5</button>
-          </div>
-          <div class="numquam color">
-            <button>6</button>
-          </div>
-          <div class="numquam color">
-            <button>-</button>
-          </div>
-          <div class="numquam color">
-            <button>1</button>
-          </div>
+   <div class="cont">
+          <div class="numquam color"> <button>AC</button>  </div>
+          <div class="numquam color"><button><i class="ri-delete-back-2-line"></i></button></div>
+          <div class="numquam color">  <button>+/-</button></div>
+          <div class="numquam color"> <button><i class="ri-divide-line"></i></button></div>
+          <div class="numquam color" onclick="screenOutput(this.value)" value="7"> <button>7</button></div>
+          <div class="numquam color"><button>8</button></div>
+          <div class="numquam color">  <button>9</button> </div>
+          <div class="numquam color"> <button>x</button> </div>
+          <div class="numquam color"> <button>4</button> </div>
+          <div class="numquam color"> <button>5</button></div>
+          <div class="numquam color"> <button>6</button></div>
+          <div class="numquam color">  <button>-</button></div>
+          <div class="numquam color"> <button>1</button></div>
           <div class="numquam color"><button>2</button></div>
           <div class="numquam color"><button>3</button></div>
           <div class="numquam color"><button>+</button></div>
@@ -121,5 +95,13 @@
         </div>
       </div>
     </div>
+    <script>
+      let out=document.getElementById("output");
+      let op1, op2,opr,res;
+      function screenOutput(x){
+        out.value +=x;
+      }
+      
+    </script>
   </body>
 </html>
