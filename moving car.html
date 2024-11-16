@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0%;
+            margin: 0;
+            box-sizing: border-box;
+          
+        }
+        .content{
+            overflow: hidden;
+        }
+        .bg{
+            background-image: url(image/road.jpg);
+            background-position: center;
+            background-repeat: repeat;
+            background-size: contain;
+            height: 100vh;
+            width: 200rem;
+            position: relative;
+            animation: back; 
+    animation-duration: 60s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+   
+            
+        }
+        .car{
+            position: relative; 
+            top: 14rem;
+        }
+        #fera{
+            position: absolute;
+            height:8rem;
+            width: 10rem;
+            animation-name: fera;
+            animation-duration: 10s;
+            animation-iteration-count: infinite;
+            animation-timing-function:linear ;
+            animation-fill-mode: forwards;
+
+        }
+        #wheel{
+          position: absolute; 
+         
+        }
+        #wheele{
+            position: absolute;
+            height: 1.5rem;
+    /* margin: 74px 1rem; */
+    top: 4.6rem;
+    margin-left: 16px;
+    animation-name: wheele;
+          animation-duration: 10s;
+          animation-iteration-count: infinite;
+            animation-timing-function:linear ;
+            animation-fill-mode: forwards;
+           
+
+        }
+        #wheele2{
+            top: 4.6rem;
+    position: absolute;
+    margin-left: 6.3rem;
+    height: 1.5rem;
+     animation-name: wheele; 
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+        }
+        @keyframes wheele {
+          
+            0%{
+                left: 0;
+            }
+            100%{
+            
+                transform: rotate(360deg);
+                left:100rem ;
+            }
+        }
+      
+      
+        @keyframes back {
+            0%{
+                top:0;
+                left: 0%;
+            }
+            100%{
+                left: -100rem;
+            }
+            
+        } 
+
+
+        @keyframes fera {
+            0%{
+                top: 0;
+                left: 0;
+            }
+            100%{
+                top:0;
+                left:100rem ;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="content">
+    <div class="bg">
+        <div class="car">
+            <img id="fera" src="image/car-removebg-preview.png" alt="">
+            <span id="wheel">
+                <img  id="wheele"src="image/wheel.png" alt="">
+                <img  id="wheele2"src="image/wheel.png" alt="">
+            </span>
+        </div>
+    </div>
+    </div>
+</body>
+</html>
