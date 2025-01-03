@@ -1,0 +1,14 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.cards{
+    display: flex;
+    gap: 6rem;
+    margin-top: 1rem;
+}
+.card{
+    width: 10rem;
+    border: 2px solid black;
+}

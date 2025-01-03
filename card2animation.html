@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            position: relative;
+    width: 6rem;
+    height: 12rem;
+    overflow: hidden;
+    /* display: flex; */
+        }
+        .card{
+            position: absolute;
+    display: flex;
+    width: 4rem;
+    animation-name: move;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+
+        }
+        .card img{
+            width: 10rem;
+        }
+        @keyframes move {
+            0%{
+                right: 0;
+            }   
+            25%{
+                right: 15rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <img src="image/car-removebg-preview.png" alt="">
+            <img src="image/google.png" alt="">
+        </div>
+    </div>
+</body>
+</html>

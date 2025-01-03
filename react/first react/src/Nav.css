@@ -1,0 +1,15 @@
+.main a{
+    color: white;
+}
+.nav{
+    display: flex;
+justify-content: space-between;
+margin: 0 2rem;
+padding-top: 1rem;
+font-size: 1.5rem;
+/* gap: 44px; */
+}
+.nav_right{
+gap: 1rem;
+    display: flex;
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            
+        }
+        .card{
+            height: 200px;
+            width: 400px;
+            background-size: cover;
+            animation-name: move;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+        
+           
+        }
+
+        @keyframes move {
+            0%{
+                background-image: url(image/back.jpeg);
+            }
+            25%{
+                background-image: url(image/car-removebg-preview.png);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            
+        </div>
+    </div>
+</body>
+</html>
